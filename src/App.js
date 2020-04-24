@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Paper, Typography, TextField, Button} from '@material-ui/core'
+import {List, ListItem, ListItemText} from '@material-ui/core'
 // import blueGrey from '@material-ui/core/colors/blueGrey'
 import './App.css';
 
@@ -71,6 +72,12 @@ render() {
           
           <Button type='submit' color='primary' variant='contained'>Look up Zip</Button>
       </form>
+       <List>
+          <h2 id="name">{this.state.name}</h2>
+          <div id="temperature">{this.state.temperature}</div>
+          <div id="forcast">{this.state.feels_like}</div>
+          <div id="feels_like">{this.state.forecast}</div>
+       </List>
      
       </Paper>
       
